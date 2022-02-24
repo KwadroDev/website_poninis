@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./public/favicon.ico" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000" />
+  <meta name="description"
+    content="Ponini's, is an NFT collection made up of 10 Traits in 8Bit art released on the Polygon Network. 
+    Each NFT is different, there are many combinations and 8 rarities, 
+    making your piece unique. From horses, unicorns and pegasus, 
+    to a mixture of all of them with elemental powers. You can find them by randomly Minting." />
+  <link rel="manifest" href="./public/manifest.json" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Poninis</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button aria-controls="basic-navbar-nav" type="button" aria-label="Toggle navigation" class="navbar-toggler colapsed">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="./mynfts.html">My NFTs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="./dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="./marketplace.html">Marketplace</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mx-auto gap-4" id="SocialNetwork">
+          <li class="nav-item">
+            <a href="https://www.twitter.com/poninisnft/" class="twitter" target="_blank" alt="Twitter"><i
+                class="fab fa-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.instagram.com/poninisnft/" class="instagram" target="_blank" alt="Instagram"><i
+                class="fab fa-instagram"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://t.me/poninisnft" class="telegram" target="_blank" alt="Telegram"><i class="fab fa-telegram"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://discord.gg/z7HFNAJkeY" class="discord" target="_blank" alt="Discord"><i class="fab fa-discord"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="barCountdown">
+    <nav class="bar navbar-expand-lg" id="Gradient">
+      <div class="container-fluid">
+        <div class="navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <p class="nav" id="countdown">Whitelist Inscription</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="barSearch">
+    <nav class="barSelect navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#story" style="text-decoration: none;">Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mint-details" style="text-decoration: none;">NFT Mint Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rarity" style="text-decoration: none;">Traits & Rarities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#roadmap" style="text-decoration: none;">Roadmap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#community" style="text-decoration: none;">Community Benefits</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <br />
+
+  <div class="EnEs">
+    <span class="en">English</span>
+      <input type="checkbox" class="check">
+    <span class="es">Spanish</span>
+  </div>
+
+    <div class="Title">
+      <img class="Logo" src="./assets/poninis_nft.svg" alt="Logo">
+    </div>
+    <div class="Top shadow">
+      <div class="App mx-auto">
+        <div>
+          <div class="Header">
+            <img class="img_top" style="float: left;" src="./assets/perfil_web_nft.gif" alt="NFT" />
+              <div>
+                <p class="About">
+                Ponini's, is an NFT collection made up of 10 Traits in 8Bit art released on the Polygon Network.
+                <br> 
+                Each NFT is different, there are many combinations and 8 rarities, making your piece unique.
+                <br>
+                From horses, unicorns and pegasus, to a mixture of all of them with elemental powers.
+                <br>
+                You can find them by randomly Minting.
+                <br>
+                <span class="Contract" style="color: aqua;">Verified Contract:
+                  <a class="VContract text-decoration-none" style="color: #fff;" 
+                  href="https://mumbai.polygonscan.com/address/0xfac5775552fc18b50b405872a78fd31b9e7735e9#code" 
+                  target="_blank">0xfac5775552fC18B50B405872A78fD31b9e7735E9</a></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+  <!-- <div class="Banner">
+    <section>
+      <a target="_blank" href="https://polygonscan.com"><img src="./assets/polygon-logo.svg" alt="Polygon"></a>
+    </section>
+  </div> -->
+
+  <div class="Collage">
+    <img src="./assets/Collage_Banner.png" alt="Banner">
+  </div>
+  <br>
+
+  <div class="Mint bd-hightlight p-4">
+      <img class="img_mint" src="./assets/ClaimRevealNFT.gif" alt="NFTmint" />
+      <br />
+      <br />
+      <input class="ButtonConnect btn btn-success btn-lg" id="connect_button" type="button" value="connect"
+        onclick="connectWallet()">
+      <p><span id="web3_message">Loading web3...</span></p>
+      <select class="custom-select" id="mint_amount">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+      </select>
+      <input class="ButtonMint btn btn-info btn-lg" type=button value="mint!" onclick="mint()">
+      <br>
+      <br>
+      <p id="nft_balance">...</p>
+      <p id="total_mint"></p>
+      <p id="price"></p>
+  </div>
+  <br />
+
+    <div class="SearchSections mx-auto">
+      <section class="Story p-4" id="story">
+        <h2>Story</h2>
+        <br>
+        <p>
+          DreamLands, is the world where the Ponini's live, a place full of adventure and fantasy.
+          <br />
+          The parallel universe that we can all access today. 
+          Animals, nature and almost everything around them is the dominant species. 
+          Within the DreamsVerse we are located in HorseKingdon waging a battle against an evil force 
+          that has corrupted some Ponini's, the strongest fight to restore peace to their 
+          kingdom and protect the magic of the Mythical beings.
+          Over 10,000 wonderful Ponini's await you, ready to become part of your collection. 
+        </p>
+      </section>
+
+      <section class="Mint-Details p-4" id="mint-details">
+        <h2>NFT Mint Details</h2>
+        <br>
+        <span>
+          <p>
+            <p3>Network</p3> - Polygon Mainnet
+        </span></p>
+        <span>
+          <p>
+            <p3>Total Supply</p3> - 10,000
+          </p>
+        </span>
+        <span>
+          <p>
+            <p3>Whitelist</p3> - Cost 25 Matic - Supply 1,000
+            (Buyer Limit Per Wallet - 5)
+          </p>
+        </span>
+        <span>
+          <p>
+            <p3>PreSale</p3> - Cost 35 Matic - Supply 1,400
+            (Buy Limit Per Buy - 10)
+          </p>
+        </span>
+        <span>
+          <p>
+            <p3>Reserved Mint</p3> - 100 For Giveaway & Reward
+          </p>
+        </span>
+        <span>
+          <p>
+            <p3>Phase 1 Sale</p3> - Cost 50 Matic - Supply 2,500
+            (Buy Limit Per Buy - 20)
+          </p>
+        </span>
+        <span>
+          <p>
+            <p3>Phase 2 Sale</p3> - Cost 75 Matic - Supply 2,500
+            (Buy Limit Per Buy - 20)
+          </p>
+        </span>
+        <span>
+          <p>
+            <p3>Phase 3 Sale</p3> - Cost 100 Matic - Supply 2,500
+            (Buy Limit Per Buy - 20)
+          </p>
+        </span>
+      </section>
+
+      <section class="Rarity p-4" id="rarity">
+        <h2>Traits & Rarities</h2>
+        <br>
+        <span>
+          <p>
+            They are 100% unique, each of their features is worked separately and joined randomly, 
+            so that the collection is more fun and interesting.
+            <br />
+          <h4>-Parts-</h4>
+          <span>
+            <p3>
+              Rarity / Background
+            </p3>
+          </span>
+          <br />
+          <span>
+            <p3>
+              Body
+            </p3>
+          </span>
+          <br />
+          <span>
+            <p3>
+              Snout
+            </p3>
+          </span>
+          <br />
+          <span>
+            <p3>
+              Hoof
+            </p3>
+          </span>
+          <br />
+          <span>
+            <p3>
+              Hair
+            </p3>
+          </span>
+          <br />
+          <span>
+            <p3>
+              Hair Stains
+            </p3>
+          </span>
+          <br />
+          <span>
+            <p3>
+              Horn Unicorn
+            </p3>
+          </span>
+          <br />
+          <span>
+            <p3>
+              Swings
+            </p3>
+          </span>
+          <br />
+          <span>
+            <p3>
+              Eyes
+            </p3>
+          </span>
+          <br />
+          <span>
+            <p3>
+              Power
+            </p3>
+          </span>
+          <br></br>
+          <img class="TraitsImg shadow" src="./assets//Little Horse Rarity.png" alt="Rarity" />
+          <br><br>
+          <p2>NFT Example Traits & Rarities</p2>
+          <br></br>
+          <span>
+            <p3>●Rarity</p3> <p2>- Epic (10%)</p2>
+          </span>
+          <br />
+          <span>
+            <p3>●Body</p3> <p2>- Black (2%)</p2>
+          </span>
+          <br />
+          <span>
+            <p3>
+              ●Snout <p2>- Brown (65%)</p2>
+            </p3>
+          </span>
+          <br />
+          <span>
+            <p3>
+              ●Hoof <p2>- Black (17%)</p2>
+            </p3>
+          </span>
+          <br />
+          <span>
+            <p3>
+              ●Hair <p2>- White (4%)</p2>
+            </p3>
+          </span>
+          <br />
+          <span>
+            <p3>
+              ●Hair Stains <p2>- None (40%)</p2>
+            </p3>
+          </span>
+          <br />
+          <span>
+            <p3>
+              ●Horn <p2>- Stone (13.65%)</p2>
+            </p3>
+          </span>
+          <br />
+          <span>
+            <p3>
+              ●Swings <p2>- None (60%)</p2>
+            </p3>
+          </span>
+          <br />
+          <span>
+            <p3>
+              ●Eyes <p2>- Corrupt (20%)</p2>
+            </p3>
+          </span>
+          <br />
+          <span>
+            <p3>
+              ●Power <p2>- None (80%)</p2>
+            </p3>
+          </span>
+      </section>
+
+        <section class="Roadmap p-4" id="roadmap">
+          <h2>Roadmap</h2>
+          <br></br>
+          <div class="container-roadmap">
+            <div class="timeline">
+              <ul>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="Porcentage">0%</h3>
+                    <h1>Whitelist Inscription</h1>
+                    <p>•3/15/2022 0:00 UTC+0 private sale begins.
+                      <br>•Duration 168hrs or while they last.
+                      <br>•Whitelist - Supply 1,000 - 25 Matic
+                    <br>•Unrevealed NFT</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="Porcentage">10%</h3>
+                    <h1>1,000 NFT Minted</h1>
+                    <p>•PreSale Supply 1,400 at 35 Matic
+                      <br>
+                      •Duration 168hrs or while they last.
+                      <br>
+                      •The 100 reserved are minted
+                      <br>
+                      •Unrevealed NFT</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="Porcentage">25%</h3>
+                    <h1>2,500 Minted</h1>
+                    <p>●Revealed NFT minted
+                      <br>
+                      •Phase 1 sale begins
+                      <br>
+                      •Sale Supply 2,500 at 50 Matic
+                      <br>
+                      •Marketing</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="Porcentage">50%</h3>
+                    <h1>5,000 Minted</h1>
+                    <p>•Phase 2 sale begins
+                      <br>
+                      •Sale Supply 2,500 at 75 Matic
+                      <br>
+                      •Raffles for Holders</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="Porcentage">75%</h3>
+                    <h1>7,500 Minted</h1>
+                    <p>•Phase 3 sale begins
+                      <br>
+                      •Sale Supply 2,500 at 100 Matic
+                      <br>
+                      •Rewards in USCD</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="Porcentage">100%</h3>
+                    <h1>10,000 Minted</h1>
+                    <p>●Out Of Stock
+                      <br>
+                      •Rewards in USCD
+                      <br>
+                      •Next Project Disclosure
+                      </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <br></br>
+        </section>
+
+      <section class="Community p-4" id="community">
+        <h2>Community Benefits</h2>
+        <br>
+        <span>
+          <p>
+            For the benefit of our community, I am a firm believer in encouraging first-comers and all Ponini's holders.
+            <br>
+            This is why the costs for Mintear NFT will increase exponentially depending on the stage of the project.
+            <br>
+            We have raffles, rewards and exclusive spaces for future projects.
+            <br>
+            We will establish all projects under one company and continue to develop on the blockchain.
+            <br>
+            It is important to follow us, be attentive to our social networks and communities.
+            <br><br>
+            •Every holder of 1 NFT will be able to access the whitelist of the next project with 1 purchase and participate in NFT Ponini's raffles.
+            <br />
+            •Any holder of 2 NFTs will be able to access the whitelist of the next project with 3 purchases and participate in draws for NFT Ponini's and rewards in USDC.
+            <br />
+            •Every holder of 5 NFT will be able to access the whitelist of the next project with 5 purchases and participate in draws for NFT Ponini's and rewards in USDC,
+            It will also have an exclusive space in the Airdrop of the next project.
+            <br />
+            •Every holder of 10 NFT will be able to access the whitelist of the next project with 5 purchases and participate in draws for NFT Ponini's and rewards in USDC,
+            You will also have access to the VIP channel of Discord where we will show some classified details and participate in the voting for decision making. 
+          </p>
+        </span>
+        <br>
+        <span>
+          <h3>Social Network<br> And<br> Community</h3>
+          <br>
+          <p3><a style="text-decoration: none;" href="https://twitter.com/poninisnft/" target="_blank">Twitter</a></p3><p>It will be our main social network.</p>
+          <br>
+          <p3><a style="text-decoration: none;" href="https://instagram.com/poninisnft/" target="_blank">Instagram</a></p3><p>We want to have the dynamic of posting all the nft minted and that you have obtained in raffles or rewards. 
+            <br>
+            How will we do it!!! tweeting the nft photo with the hashtag #poninisnft and tagging us @poninisnft
+            <br>
+            We will have a form that you can fill out and participate to get prizes.
+            On our networks we will announce the days of giveaways and winners.
+            <br>
+            link-</p>
+            <br>
+            <p3><a style="text-decoration: none;" href="https://discord.gg/z7HFNAJkeY" target="_blank">Discord</a></p3><p>We will have different channels so that the whole community can interact.
+              <br>
+              Including a VIP channel</p>
+              <br>
+              <p3><a style="text-decoration: none;" href="https://t.me/poninisnft" target="_blank">Telegram</a><p>Only for announcement.
+                <br>
+                Then it will open for those who only use telegram.</p></p3>
+        </span>
+      </section>
+    </div>
+
+  <!--<div class="FAQ">
+      <h2>FAQ</h2>
+      <h3>● Si vendo mi nft en Opensea aparece en venta en el marketplace de Ponini's?</h3>
+      <p>
+        Si, de igual manera si lo vendes en el marketplace de Ponini's tambien aparece en Opensea
+      </p>
+      <h3>● Cuando podre ver mis nft?</h3>
+      <p>
+        Una vez comience la venta Fase 1 se revelaran los nft
+      </p>
+      <h3>● </h3>
+    </div> -->
+
+  <div class="Owner">
+      <h2 style="font-size: 24px;">Owner</h2>
+      <br>
+      <img src="./assets/4086.gif" alt="TeraByteNFTs">
+      <br>
+      <br>
+      <a class="TeraByteNFTs" style="text-decoration: none; font-size: 18px;" 
+        href="https://twitter.com/terabytenfts" target="_blank">@TeraByteNFTs</a>
+  </div>
+  <br>
+
+  <!-- scripts -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.5/web3.min.js"></script>
+  <script type="text/javascript" src="./src/little_horse_nft.js"></script>
+  <script type="text/javascript" src="./src/countdown.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script type="text/javascript" src="./src/main.js"></script>
+  <script src="./src/enes.js"></script>
+</body>
+
+<footer>
+  <div class='Footer'>
+    <div class="footer footer-bg p-3 height: 450px; display: table-cell; vertical-align: middle; width: 100vw; ">
+      <div class="container text-center ">
+        <div>
+          <div class="row ">
+            <div class="col col-12">
+              <div class="row ">
+                <div class="col col-3">
+                  <h6 class="white font-weight: 500; ">Community</h6>
+                  <a class="link" style="text-decoration:none" target="_blank" href="https://discord.gg/z7HFNAJkeY">Discord</a>
+                  <br />
+                  <a class="link" style="text-decoration:none" target="_blank" href="https://t.me/poninisnft">Telegram</a>
+                </div>
+                <div class="col col-6 ">
+                  <h6 class="white font-weight: 500; ">Social Network</h6>
+                  <a class="link" style="text-decoration:none" target="_blank" href="https://www.instagram.com/poninisnft/">Instagram</a>
+                  <br />
+                  <a class="link" style="text-decoration:none" target="_blank" href="https://www.twitter.com/poninisnft/">Twitter</a>
+                </div>
+                <div class="col col-3 ">
+                  <h6 class="white font-weight: 500; ">Terms And Privacy</h6>
+                  <a class="link" style="text-decoration:none" target="_blank" href="./term.html">Terms Of
+                    Service</a>
+                  <br />
+                  <a class="link" style="text-decoration:none" target="_blank" href="./privacy.html">Privacy Policy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-5 " />
+          <div>
+            <div class="row ">
+              <div class="col col-12 ">
+                <h6 class="white font-weight: 400; ">Copyright © 2022 Poninis | All Right Reserverd</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>
