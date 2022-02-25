@@ -448,8 +448,7 @@ a {
 
     .Header {
         display: flex;
-        flex: content;
-        justify-content: center;
+        flex-direction: column;
         gap: 25px;
         min-height: 20vh;
     }
