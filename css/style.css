@@ -440,6 +440,50 @@ a {
       
 }
 
+@media only screen and (max-width:1600px) {
+    .collapse.show {
+        transform: translate(20px);
+        text-align: center;
+    }
+
+    .Header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Logo {
+        width: 300px;
+    }
+
+    .img_top {
+        width: 293px;
+    }
+
+    .img_mint {
+        width: 293px;
+    }
+
+    .TraitsImg {
+        width: 293px;
+    }
+
+    .About {
+        text-size-adjust: auto;
+        text-justify: auto;
+        align-items: center;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .Contract {
+        font-size: 14px;
+    }
+
+    .barCountdown p {
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .collapse.show {
         transform: translate(20px);
@@ -597,49 +641,5 @@ a {
 
     .collapse.show {
         transform: translate(20px);
-    }
-}
-
-@media screen and (max-width:990px) {
-    .collapse.show {
-        transform: translate(20px);
-        text-align: center;
-    }
-
-    .Header {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .Logo {
-        width: 300px;
-    }
-
-    .img_top {
-        width: 293px;
-    }
-
-    .img_mint {
-        width: 293px;
-    }
-
-    .TraitsImg {
-        width: 293px;
-    }
-
-    .About {
-        text-size-adjust: auto;
-        text-justify: auto;
-        align-items: center;
-        text-align: left;
-        font-size: 18px;
-    }
-
-    .Contract {
-        font-size: 14px;
-    }
-
-    .barCountdown p {
-        justify-content: center;
     }
 }
