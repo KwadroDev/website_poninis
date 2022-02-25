@@ -382,6 +382,10 @@ select {
     border-radius: 25px;
 }
 
+.TeraByteNFTs {
+    font-size: 18px;
+}
+
 .TeraByteNFTs:hover {
     color: #c777b9;
     opacity: 85%;
@@ -436,21 +440,31 @@ a {
       
 }
 
-@media only screen and (max-width:1474px) {
-    .Header {
-        display: flex;
-        flex: content;
-        justify-content: center;
-        align-items: center;
+@media screen and (max-width:1600px) {
+    .collapse.show {
+        transform: translate(20px);
         text-align: center;
     }
 
+    .Header {
+        display: flex;
+        flex-direction: column;
+    }
+
     .Logo {
-        width: 400px;
+        width: 300px;
+    }
+
+    .img_top {
+        width: 293px;
+    }
+
+    .img_mint {
+        width: 293px;
     }
 
     .TraitsImg {
-        width: 393px;
+        width: 293px;
     }
 
     .About {
@@ -464,129 +478,32 @@ a {
     .Contract {
         font-size: 14px;
     }
-}
-
-@media only screen and (max-width:1235px) {
-    .About {
-        text-size-adjust: auto;
-        text-justify: auto;
-        align-items: center;
-        font-size: 17px;
-        text-align: left;
-    }
-
-    .img_mint {
-        width: 393px;
-    }
-
-    .TraitsImg {
-        width: 393px;
-    }
-}
-
-@media only screen and (max-width:1110px) {
-    .About {
-        text-size-adjust: auto;
-        text-justify: auto;
-        align-items: center;
-        font-size: 16px;
-        text-align: left;
-    }
-}
-
-@media only screen and (max-width:990px) {
-    .collapse.show {
-        transform: translate(20px);
-        text-align: center;
-    }
-
-    .Logo {
-        width: 350px;
-    }
-
-    .Header {
-        gap: 25px;
-    }
-
-    .img_top {
-        width: 393px;
-    }
-
-    .img_mint {
-        width: 393px;
-    }
-
-    .TraitsImg {
-        width: 393px;
-    }
-
-    .Owner img {
-        width: 393px;
-    }
-
-    .About {
-        text-size-adjust: auto;
-        text-justify: auto;
-        align-items: center;
-        text-align: left;
-        font-size: 15px;
-    }
-
-    .Contract {
-        font-size: 12px;
-    }
 
     .barCountdown p {
         justify-content: center;
     }
 }
 
-@media only screen and (max-width:904px) {
-    .About {
-        text-align: left;
-        font-size: 13px;
-    }
-
-    .img_top {
-        width: 293px;
-    }
-
-    .img_mint {
-        width: 293px;
-    }
-
-    .TraitsImg {
-        width: 293px;
-    }
-
-    .Owner img {
-        width: 293px;
-    }
-}
-
-@media only screen and (max-width:802px) {
-    .About {
-        text-align: left;
-        font-size: 12px;
-    }
-}
-
-@media only screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .Header {
         gap: 25px;
         min-height: 20vh;
     }
 
     .Logo {
-        width: 300px;
+        width: 200px;
     }
     
     .img_top {
-        width: 293px;
+        width: 193px;
+    }
+
+    .img_mint {
+        width: 193px;
     }
 
     .TraitsImg {
-        width: 293px;
+        width: 193px;
     }
 
     .About {
@@ -611,20 +528,8 @@ a {
     }
 
     .Owner img {
+        width: 193px;
         border-radius: 25px;
-    }
-
-    .Owner h3:hover {
-        transform: scale(1.1);
-        opacity: 85%;
-    }
-
-    .TeraByteNFTs:hover {
-        transition: transform 0.4s;
-    }
-
-    .TeraByteNFTs a:hover {
-        color: #c777b9;
     }
 
     .Term2 {
@@ -645,7 +550,7 @@ a {
         #262d36, #282f38, #2a313a, #2c333d, #2d363f, #2f3842, #313b46, 
         #343e49, #36414d, #394451);
       
-      }
+    }
 
       a {
         color: #41dfff;
@@ -657,6 +562,16 @@ a {
         transform: scale(1.1);
         opacity: 85%;
         
+    }
+
+    .timeline-content h1 {
+        font-size: 16px;
+        font-weight: 500;
+        color: #41dfff;
+    }
+
+    .TeraByteNFTs {
+        font-size: 14px;
     }
 }
 
