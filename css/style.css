@@ -29,7 +29,7 @@ html {
 }
 
 .Header-Img {
-    padding: 50px;
+    padding: 25px;
 }
 
 .Main {
@@ -50,7 +50,6 @@ html {
 
 .grid-container {
     display: grid;
-
     grid-template-areas: 
       "navbar"
       "topbar"
@@ -205,9 +204,8 @@ body {
 .About {
     font-family: 'Press Start 2P', cursive;
     font-size: 12px;
-    text-align: left;
-    align-items: center;
-    padding: 50px;
+    text-align: center;
+    padding: 25px;
 }
 
 .Contract {
@@ -215,7 +213,7 @@ body {
     vertical-align: -webkit-baseline-middle;
     width: 50px;
     height: 25px;
-    font-size: 6px;
+    font-size: 8px;
     border-radius: 25px;
     box-sizing: border-box;
     border: 8px solid #333;
@@ -336,18 +334,20 @@ select {
 
 .container-roadmap {
     min-height: 100vh;
+    margin: auto;
 }
 
 .timeline {
     width: 100%;
     height: auto;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 -15px;
     position: relative;
 }
 
 .timeline ul {
     list-style: none;
+    margin: 0 auto;
 }
 
 .timeline ul li {
