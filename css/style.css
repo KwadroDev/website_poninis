@@ -486,7 +486,7 @@ a {
     }
 }
 
-@media only screen and (min-width: 990px) {
+@media (min-width: 990px) {
     .collapse.show {
         transform: translate(20px);
         text-align: center;
