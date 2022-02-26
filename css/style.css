@@ -9,11 +9,63 @@
 
 html {
     font-family: 'Press Start 2P', cursive;
+    height: 100%;
+}
+
+.grid-container > * {
+    text-align: center;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.TopBar {
+    grid-area: topbar;
+}
+
+.Header {
+    grid-area: header;
+}
+
+.Header-Img {
+    padding: 50px;
+}
+
+.Main {
+    grid-area: main;
+}
+
+.CollageBanner {
+    grid-area: banner;
+}
+
+.Section {
+    grid-area: section;
+}
+
+.Footer {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+
+    grid-template-areas: 
+      "navbar"
+      "topbar"
+      "header"
+      "banner"
+      "main"
+      "section"
+      "footer";
 }
 
 body {
     background: #232A32;
     color: white;
+    min-height: 100%;
+    font-size: 1.2rem;
 }
 
 #SocialNetwork a {
@@ -146,33 +198,31 @@ body {
     min-height: 5vh;
     padding: 50px 50px;
     margin: 5px;
-    font-family: 'Press Start 2P', cursive;
-}
-
-.Header {
-    display: flex;
-    flex: content;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 50px;
 }
 
 .Logo {
-    width: 500px;
+    width: 250px;
 }
 
 .img_top {
-    width: 393px;
+    width: 293px;
     border-radius: 20px;
+}
+
+.About {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    text-align: left;
+    align-items: center;
+    padding: 50px;
 }
 
 .Contract {
     content: '';
-    vertical-align: sub;
+    vertical-align: -webkit-baseline-middle;
     width: 50px;
     height: 25px;
-    font-size: 18px;
+    font-size: 12px;
     border-radius: 25px;
     box-sizing: border-box;
     border: 8px solid #333;
@@ -180,34 +230,18 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.Banner {
-    background-color: white;
-    text-align: center;
-    padding: 5px;
-}
-
-.Banner img {
-    width: 500px;
-}
-
 .img_mint {
-    width: 393px;
+    width: 293px;
     border-radius: 20px;
 }
 
 .Title {
     text-align: center;
-    padding: 10px;
+    padding: 50px;
 }
 
 .Title h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.About {
-    font-size: 24px;
-    text-align: left;
-    align-items: center;
 }
 
 .Mint {
@@ -215,6 +249,7 @@ body {
     border-radius: 0px 0px 20px 20px;
     background-color: #232A32;
     text-align: center;
+    padding: 20px;
 }
 
 select {
@@ -236,28 +271,12 @@ select {
     color: white;
 }
 
-.row {
-    display: flex;
-    padding: 0;
-}
-
-.column {
-    flex: 25%;
-    max-width: 20%;
-    padding: 0;
-}
-
-.column img {
-    vertical-align: middle;
-    width: 100%;
-}
-
 .Collage img {
     width: 100%;
 }
 
 .TraitsImg {
-    width: 393px;
+    width: 293px;
     border-radius: 20px;
 }
 
@@ -267,10 +286,10 @@ select {
 
 .SearchSections {
     min-height: 100vh;
-    margin: 50px;
-    padding: 50px;
-    font-size: 22px;
-    font-weight: 400;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 300;
     font-family: 'Press Start 2P', cursive;
     border-radius: 20px;
     background-color: aqua;
@@ -315,13 +334,10 @@ select {
 
 .container-roadmap {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .timeline {
-    width: 80%;
+    width: 100%;
     height: auto;
     max-width: 800px;
     margin: 0 auto;
@@ -375,12 +391,6 @@ select {
     font-size: 20px;
 }
 
-.FAQ {
-    background: #c777b9;
-    padding: 5px;
-    text-align: center;
-}
-
 .Owner {
     text-align: center;
     font-family: 'Press Start 2P', cursive;
@@ -388,10 +398,11 @@ select {
 
 .Owner img {
     border-radius: 25px;
+    width: 293px;
 }
 
 .TeraByteNFTs {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .TeraByteNFTs:hover {

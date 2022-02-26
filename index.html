@@ -20,7 +20,7 @@
   <title>Poninis</title>
 </head>
 
-<body>
+<body class="grid-container">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <button aria-controls="basic-navbar-nav" type="button" aria-label="Toggle navigation" class="navbar-toggler colapsed">
@@ -61,131 +61,131 @@
     </div>
   </nav>
 
-  <div class="barCountdown">
-    <nav class="bar navbar-expand-lg" id="Gradient">
-      <div class="container-fluid">
-        <div class="navbar-collapse">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <p class="nav" id="countdown">Whitelist Inscription</p>
-            </li>
-          </ul>
+  <top class="TopBar">
+    <div class="barCountdown">
+      <nav class="bar navbar-expand-lg" id="Gradient">
+        <div class="container-fluid">
+          <div class="navbar-collapse">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <p class="nav" id="countdown">Whitelist Inscription</p>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </div>
+      </nav>
+    </div>
 
-  <div class="barSearch">
-    <nav class="barSelect navbar-expand-lg">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#story" style="text-decoration: none;">Story</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#mint-details" style="text-decoration: none;">NFT Mint Details</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#rarity" style="text-decoration: none;">Traits & Rarities</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#roadmap" style="text-decoration: none;">Roadmap</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#community" style="text-decoration: none;">Community Benefits</a>
-            </li>
-          </ul>
+    <div class="barSearch">
+      <nav class="barSelect navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#story" style="text-decoration: none;">Story</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mint-details" style="text-decoration: none;">NFT Mint Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#rarity" style="text-decoration: none;">Traits & Rarities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#roadmap" style="text-decoration: none;">Roadmap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#community" style="text-decoration: none;">Community Benefits</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </div>
-  <br />
+      </nav>
+    </div>
 
-  <div class="EnEs">
-    <span class="en">English</span>
-      <input type="checkbox" class="check">
-    <span class="es">Spanish</span>
-  </div>
+    <div class="EnEs">
+      <span class="en">English</span>
+        <input type="checkbox" class="check">
+      <span class="es">Spanish</span>
+    </div>
 
     <div class="Title">
       <img class="Logo" src="./assets/poninis_nft.svg" alt="Logo">
     </div>
+  </top>
+
+  <header class="Header">
     <div class="Top shadow">
-      <div class="App mx-auto">
-        <div>
-          <div class="Header">
-            <img class="img_top" style="float: left;" src="./assets/perfil_web_nft.gif" alt="NFT" />
-              <div>
-                <p class="About">
-                Ponini's, is an NFT collection made up of 10 Traits in 8Bit art released on the Polygon Network.
-                <br> 
-                Each NFT is different, there are many combinations and 8 rarities, making your piece unique.
-                <br>
-                From horses, unicorns and pegasus, to a mixture of all of them with elemental powers.
-                <br>
-                You can find them by randomly Minting.
-                <br>
-                <span class="Contract" style="color: aqua;">Verified Contract:
-                  <a class="VContract text-decoration-none" style="color: #fff;" 
-                  href="https://mumbai.polygonscan.com/address/0xfac5775552fc18b50b405872a78fd31b9e7735e9#code" 
-                  target="_blank">0xfac5775552fC18B50B405872A78fD31b9e7735E9</a></span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="Header-Img">
+        <img class="img_top" src="./assets/perfil_web_nft.gif" alt="NFT" />
       </div>
-      <br>
+      <div class="About">
+        <p>
+        Ponini's, is an NFT collection made up of 10 Traits in 8Bit art released on the Polygon Network.
+        <br> 
+        Each NFT is different, there are many combinations and 8 rarities, making your piece unique.
+        <br>
+        From horses, unicorns and pegasus, to a mixture of all of them with elemental powers.
+        <br>
+        You can find them by randomly Minting.
+        <br>
+          <span class="Contract" style="color: aqua;">Verified Contract:
+          <a class="VContract text-decoration-none" style="color: #fff;" 
+          href="https://mumbai.polygonscan.com/address/0xfac5775552fc18b50b405872a78fd31b9e7735e9#code" 
+          target="_blank">0xfac5775552fC18B50B405872A78fD31b9e7735E9</a></span>
+        </p>
+      </div>
+    </div>
+  </header>
 
-  <!-- <div class="Banner">
-    <section>
-      <a target="_blank" href="https://polygonscan.com"><img src="./assets/polygon-logo.svg" alt="Polygon"></a>
-    </section>
-  </div> -->
+  <Banner class="CollageBanner">
+    <!-- <div class="Banner">
+      <section>
+        <a target="_blank" href="https://polygonscan.com"><img src="./assets/polygon-logo.svg" alt="Polygon"></a>
+      </section>
+    </div> -->
 
-  <div class="Collage">
-    <img src="./assets/Collage_Banner.png" alt="Banner">
-  </div>
-  <br>
+    <div class="Collage">
+      <img src="./assets/Collage_Banner.png" alt="Banner">
+    </div>
+  </Banner>
 
-  <div class="Mint bd-hightlight p-4">
-      <img class="img_mint" src="./assets/ClaimRevealNFT.gif" alt="NFTmint" />
-      <br />
-      <br />
-      <input class="ButtonConnect btn btn-success btn-lg" id="connect_button" type="button" value="connect"
-        onclick="connectWallet()">
-      <p><span id="web3_message">Loading web3...</span></p>
-      <select class="custom-select" id="mint_amount">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-        <option value="11">11</option>
-        <option value="12">12</option>
-        <option value="13">13</option>
-        <option value="14">14</option>
-        <option value="15">15</option>
-        <option value="16">16</option>
-        <option value="17">17</option>
-        <option value="18">18</option>
-        <option value="19">19</option>
-        <option value="20">20</option>
-      </select>
-      <input class="ButtonMint btn btn-info btn-lg" type=button value="mint!" onclick="mint()">
-      <br>
-      <br>
-      <p id="nft_balance">...</p>
-      <p id="total_mint"></p>
-      <p id="price"></p>
-  </div>
-  <br />
+  <main class="Main">
+    <div class="Mint">
+        <img class="img_mint" src="./assets/ClaimRevealNFT.gif" alt="NFTmint" />
+        <br />
+        <br />
+        <input class="ButtonConnect btn btn-success btn-lg" id="connect_button" type="button" value="connect"
+          onclick="connectWallet()">
+        <p><span id="web3_message">Loading web3...</span></p>
+        <select class="custom-select" id="mint_amount">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+        </select>
+        <input class="ButtonMint btn btn-info btn-lg" type=button value="mint!" onclick="mint()">
+        <br>
+        <br>
+        <p id="nft_balance">...</p>
+        <p id="total_mint"></p>
+        <p id="price"></p>
+    </div>
 
     <div class="SearchSections mx-auto">
       <section class="Story p-4" id="story">
@@ -384,7 +384,7 @@
 
         <section class="Roadmap p-4" id="roadmap">
           <h2>Roadmap</h2>
-          <br></br>
+          <br>
           <div class="container-roadmap">
             <div class="timeline">
               <ul>
@@ -461,7 +461,6 @@
               </ul>
             </div>
           </div>
-          <br></br>
         </section>
 
       <section class="Community p-4" id="community">
@@ -515,8 +514,11 @@
         </span>
       </section>
     </div>
+    <br>
+  </main>
 
-  <!--<div class="FAQ">
+  <section class="Section">
+    <!--<div class="FAQ">
       <h2>FAQ</h2>
       <h3>● Si vendo mi nft en Opensea aparece en venta en el marketplace de Ponini's?</h3>
       <p>
@@ -529,16 +531,54 @@
       <h3>● </h3>
     </div> -->
 
-  <div class="Owner">
-      <h2 style="font-size: 24px;">Owner</h2>
-      <br>
-      <img src="./assets/4086.gif" alt="TeraByteNFTs">
-      <br>
-      <br>
-      <a class="TeraByteNFTs" style="text-decoration: none;" 
-        href="https://twitter.com/terabytenfts" target="_blank">@TeraByteNFTs</a>
-  </div>
-  <br>
+    <div class="Owner">
+        <h2 style="font-size: 24px;">Owner</h2>
+        <br>
+        <img src="./assets/4086.gif" alt="TeraByteNFTs">
+        <br>
+        <br>
+        <a class="TeraByteNFTs" style="text-decoration: none;" 
+          href="https://twitter.com/terabytenfts" target="_blank">@TeraByteNFTs</a>
+    </div>
+    <br>
+  </section>
+
+  <footer>
+    <div class='Footer'>
+      <div class="footer footer-bg p-3 height: 450px; display: table-cell; vertical-align: middle; width: 100vw; ">
+        <div class="container text-center ">
+          <div>
+            <div class="row ">
+              <div class="col col-12">
+                <div class="row ">
+                  <div class="col col-6">
+                    <h6 class="white font-weight: 500; ">Community</h6>
+                    <a class="link" style="text-decoration:none" target="_blank" href="https://discord.gg/z7HFNAJkeY">Discord</a>
+                    <br />
+                    <a class="link" style="text-decoration:none" target="_blank" href="https://t.me/poninisnft">Telegram</a>
+                  </div>
+                  <div class="col col-6 ">
+                    <h6 class="white font-weight: 500; ">Social Network</h6>
+                    <a class="link" style="text-decoration:none" target="_blank" href="https://www.instagram.com/poninisnft/">Instagram</a>
+                    <br />
+                    <a class="link" style="text-decoration:none" target="_blank" href="https://www.twitter.com/poninisnft/">Twitter</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="my-5 " />
+            <div>
+              <div class="row ">
+                <div class="col col-12 ">
+                  <h6 class="white font-weight: 400; ">Copyright © 2022 Poninis | All Right Reserverd</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- scripts -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.5/web3.min.js"></script>
@@ -548,42 +588,5 @@
   <script type="text/javascript" src="./src/main.js"></script>
   <script src="./src/enes.js"></script>
 </body>
-
-<footer>
-  <div class='Footer'>
-    <div class="footer footer-bg p-3 height: 450px; display: table-cell; vertical-align: middle; width: 100vw; ">
-      <div class="container text-center ">
-        <div>
-          <div class="row ">
-            <div class="col col-12">
-              <div class="row ">
-                <div class="col col-6">
-                  <h6 class="white font-weight: 500; ">Community</h6>
-                  <a class="link" style="text-decoration:none" target="_blank" href="https://discord.gg/z7HFNAJkeY">Discord</a>
-                  <br />
-                  <a class="link" style="text-decoration:none" target="_blank" href="https://t.me/poninisnft">Telegram</a>
-                </div>
-                <div class="col col-6 ">
-                  <h6 class="white font-weight: 500; ">Social Network</h6>
-                  <a class="link" style="text-decoration:none" target="_blank" href="https://www.instagram.com/poninisnft/">Instagram</a>
-                  <br />
-                  <a class="link" style="text-decoration:none" target="_blank" href="https://www.twitter.com/poninisnft/">Twitter</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr class="my-5 " />
-          <div>
-            <div class="row ">
-              <div class="col col-12 ">
-                <h6 class="white font-weight: 400; ">Copyright © 2022 Poninis | All Right Reserverd</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
 
 </html>
