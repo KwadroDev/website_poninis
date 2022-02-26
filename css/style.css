@@ -16,48 +16,8 @@ html {
     text-align: center;
 }
 
-.navbar {
-    grid-area: navbar;
-}
-
-.TopBar {
-    grid-area: topbar;
-}
-
-.Header {
-    grid-area: header;
-}
-
 .Header-Img {
     padding: 25px;
-}
-
-.Main {
-    grid-area: main;
-}
-
-.CollageBanner {
-    grid-area: banner;
-}
-
-.Section {
-    grid-area: section;
-}
-
-.Footer {
-    grid-area: footer;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-areas: 
-      "navbar"
-      "topbar"
-      "header"
-      "banner"
-      "main"
-      "section"
-      "footer";
 }
 
 body {
@@ -199,6 +159,13 @@ body {
 .img_top {
     width: 193px;
     border-radius: 20px;
+}
+
+.Header {
+    display: flex;
+    flex: content;
+    justify-content: center;
+    text-align: center;
 }
 
 .About {
@@ -367,6 +334,7 @@ select {
     font-weight: 500;
     line-height: 30px;
     margin-bottom: 10px;
+    color: #41dfff;
 }
 
 .timeline-content p {
@@ -454,7 +422,7 @@ select {
 }
 
 .Footer a {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 a {
@@ -467,4 +435,173 @@ a {
     transform: scale(1.1);
     opacity: 85%;
       
+}
+
+@media (min-width: 600px) {
+    .Logo {
+        width: 300px;
+    }
+    
+    .img_top {
+        width: 293px;
+    }
+
+    .img_mint {
+        width: 293px;
+    }
+
+    .TraitsImg {
+        width: 293px;
+    }
+
+    .About {
+        font-size: 14px;
+    }
+
+    .SearchSections {
+        font-size: 16px;
+    }
+
+    .Contract {
+        font-size: 10px;
+    }
+
+    .Owner {
+        text-align: center;
+        font-family: 'Press Start 2P', cursive;
+    }
+
+    .Owner img {
+        width: 293px;
+    }
+
+    .Term2 {
+        min-height: 100vh;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .TeraByteNFTs {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    .collapse.show {
+        transform: translate(20px);
+        text-align: center;
+    }
+
+    .Header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .HeaderTop {
+        max-width: 100vh;
+    }
+
+    .HeaderTop {
+        width: 75%;
+        padding: 50px 50px;
+        margin: 5px;
+    }
+
+    .Logo {
+        width: 500px;
+    }
+
+    .img_top {
+        width: 393px;
+        float: left;
+        margin-bottom: 25px;
+    }
+
+    .About {
+        width: 100%;
+        align-items: center;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .img_mint {
+        width: 393px;
+    }
+
+    .TraitsImg {
+        width: 393px;
+    }
+
+    .Owner img {
+        width: 393px;
+    }
+
+    .TeraByteNFTs {
+        font-size: 16px;
+    }
+
+    .Contract {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    .timeline::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        left: 50%;
+        background-color: white;
+        transform: translateX(-50%);
+    }
+    .timeline ul li {
+        width: 50%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .timeline ul li:nth-child(odd) {
+        float: left;
+        clear: right;
+        transform: translateX(-65px);
+        box-shadow: 0 10px 15px black;
+        border-radius: 20px 0px 20px 20px;
+    }
+    .timeline ul li:nth-child(even) {
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+        box-shadow: 0 10px 15px black;
+        border-radius: 0px 20px 20px 20px;
+    }
+
+    .timeline ul li::after {
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: #232A32;
+        border-radius: 50%;
+        top: 0;
+    }
+
+    .timeline ul li:nth-child(odd)::after {
+        transform: translate(50%, -50%);
+        right: -48px;
+    }
+
+    .timeline ul li:nth-child(even)::after {
+        transform: translate(50%, -50%);
+        left: -67px;
+    }
+
+    .timeline ul li:hover::after {
+        background-color: rgb(190, 70, 226);
+    }
+
+    .timeline-content .Porcentage {
+        position: absolute;
+        top: -25px;
+    }
 }
