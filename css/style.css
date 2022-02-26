@@ -193,13 +193,6 @@ body {
     background: #262d35;
 }
 
-.App {
-    width: 75%;
-    min-height: 5vh;
-    padding: 50px 50px;
-    margin: 5px;
-}
-
 .Logo {
     width: 250px;
 }
@@ -211,7 +204,7 @@ body {
 
 .About {
     font-family: 'Press Start 2P', cursive;
-    font-size: 16px;
+    font-size: 12px;
     text-align: left;
     align-items: center;
     padding: 50px;
@@ -222,7 +215,7 @@ body {
     vertical-align: -webkit-baseline-middle;
     width: 50px;
     height: 25px;
-    font-size: 12px;
+    font-size: 6px;
     border-radius: 25px;
     box-sizing: border-box;
     border: 8px solid #333;
@@ -250,6 +243,22 @@ body {
     background-color: #232A32;
     text-align: center;
     padding: 20px;
+}
+
+#web3_message {
+    font-size: 16px;
+}
+
+#nft_balance {
+    font-size: 16px;
+}
+
+#total_mint {
+    font-size: 16px;
+}
+
+#price {
+    font-size: 16px;
 }
 
 select {
@@ -286,20 +295,18 @@ select {
 
 .SearchSections {
     min-height: 100vh;
-    margin: 10px;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 250;
     font-family: 'Press Start 2P', cursive;
     border-radius: 20px;
     background-color: aqua;
     opacity: 65%;
-    box-shadow: 0 5px 25px aqua;
+    box-shadow: 0 5px 10px aqua;
     text-align: center;
 }
 
 .SearchSections {
-    max-width: 75%;
+    max-width: 80%;
 }
 
 .SearchSections p {
@@ -317,11 +324,6 @@ select {
 .SearchSections h2 {
     color: black;
 
-}
-
-.Mint-Details {
-    text-align: center;
-    justify-items: center;
 }
 
 .Roadmap {
@@ -396,13 +398,17 @@ select {
     font-family: 'Press Start 2P', cursive;
 }
 
+.Owner h2 {
+    font-size: 20px;
+}
+
 .Owner img {
     border-radius: 25px;
     width: 193px;
 }
 
 .TeraByteNFTs {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .TeraByteNFTs:hover {
@@ -445,6 +451,10 @@ select {
     #262d36, #282f38, #2a313a, #2c333d, #2d363f, #2f3842, #313b46, 
     #343e49, #36414d, #394451);
   
+}
+
+.Footer a {
+    font-size: 16px;
 }
 
 a {
