@@ -16,10 +16,6 @@ html {
     text-align: center;
 }
 
-.Header-Img {
-    padding: 25px;
-}
-
 body {
     background: #232A32;
     color: white;
@@ -490,18 +486,20 @@ a {
 }
 
 @media (min-width: 990px) {
+    .collapse.show {
+        transform: translate(20px);
+        text-align: center;
+    }
+
     .Header {
-        display: flex;
         flex-direction: column;
-        width: 100%;
     }
 
     .HeaderTop {
-        max-width: 100vh;
-    }
-
-    .HeaderTop {
-        width: 75%;
+        display: flex;
+        flex: content;
+        justify-content: center;
+        width: 55%;
         padding: 50px 50px;
         margin: 5px;
     }
