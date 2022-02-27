@@ -301,14 +301,18 @@ select {
 
 .container-roadmap {
     min-height: 100vh;
-    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
 }
 
 .timeline {
-    width: 100%;
+    width: 85%;
     height: auto;
     max-width: 800px;
-    margin: 0 -15px;
+    margin: 0 auto;
     position: relative;
 }
 
@@ -331,7 +335,7 @@ select {
 
 .timeline-content h1 {
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 650;
     line-height: 30px;
     margin-bottom: 10px;
     color: #41dfff;
@@ -552,9 +556,9 @@ a {
         position: absolute;
         height: 100%;
         width: 2px;
-        left: 50%;
-        background-color: white;
+        left: 52%;
         transform: translateX(-50%);
+        background-color: white;
     }
     .timeline ul li {
         width: 50%;
@@ -564,7 +568,7 @@ a {
     .timeline ul li:nth-child(odd) {
         float: left;
         clear: right;
-        transform: translateX(-65px);
+        transform: translateX(-30px);
         box-shadow: 0 10px 15px black;
         border-radius: 20px 0px 20px 20px;
     }
@@ -588,12 +592,12 @@ a {
 
     .timeline ul li:nth-child(odd)::after {
         transform: translate(50%, -50%);
-        right: -48px;
+        right: -30px;
     }
 
     .timeline ul li:nth-child(even)::after {
-        transform: translate(50%, -50%);
-        left: -67px;
+        transform: translate(-50%, -50%);
+        left: -30px;
     }
 
     .timeline ul li:hover::after {
@@ -603,5 +607,13 @@ a {
     .timeline-content .Porcentage {
         position: absolute;
         top: -25px;
+    }
+
+    .timeline-content h1 {
+        font-size: 25px;
+        font-weight: 800;
+        line-height: 30px;
+        margin-bottom: 10px;
+        color: #fff;
     }
 }
