@@ -490,11 +490,6 @@ a {
 }
 
 @media (min-width: 990px) {
-    .collapse.show {
-        transform: translate(20px);
-        text-align: center;
-    }
-
     .Header {
         display: flex;
         flex-direction: column;
