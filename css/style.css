@@ -301,7 +301,7 @@ select {
 
 .container-roadmap {
     min-height: 100vh;
-    width: 100%;
+    width: 93%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -309,7 +309,7 @@ select {
 }
 
 .timeline {
-    width: 85%;
+    width: 90%;
     height: auto;
     max-width: 800px;
     margin: 0 auto;
@@ -551,6 +551,10 @@ a {
 }
 
 @media only screen and (min-width: 990px) {
+    .container-roadmap {
+        width: 98%;
+    }
+
     .timeline::before {
         content: '';
         position: absolute;
