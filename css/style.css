@@ -436,6 +436,11 @@ a {
       
 }
 
+.collapse.show {
+    transform: translate(20px);
+    text-align: center;
+}
+
 @media (min-width: 600px) {
     .Logo {
         width: 300px;
@@ -485,12 +490,7 @@ a {
     }
 }
 
-@media (min-width: 900px) {
-    .collapse.show {
-        transform: translate(20px);
-        text-align: center;
-    }
-
+@media (min-width: 993px) {
     .Header {
         flex-direction: column;
     }
