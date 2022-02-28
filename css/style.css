@@ -485,7 +485,7 @@ a {
     }
 }
 
-@media (min-width: 990px) {
+@media (min-width: 900px) {
     .collapse.show {
         transform: translate(20px);
         text-align: center;
@@ -545,7 +545,7 @@ a {
     }
 }
 
-@media only screen and (min-width: 990px) {
+@media only screen and (min-width: 900px) {
     .container-roadmap {
         width: 98%;
     }
