@@ -94,7 +94,11 @@ body {
 }
 
 .EnEs {
-    text-align: center;
+    display: flex;
+    flex: content;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
 }
 
 .en {
