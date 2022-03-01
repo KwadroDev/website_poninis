@@ -98,7 +98,7 @@ body {
     flex: content;
     justify-content: center;
     gap: 15px;
-    align-items: center;
+    align-items: top;
 }
 
 .en {
