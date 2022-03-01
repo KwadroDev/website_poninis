@@ -112,7 +112,6 @@ body {
 .check {
     position: relative;
     width: 50px;
-    text-decoration: none;
 }
 
 .check:before {
