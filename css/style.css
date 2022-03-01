@@ -97,8 +97,8 @@ body {
     display: flex;
     flex: content;
     justify-content: center;
-    gap: 15px;
-    align-items: top;
+    gap: 10px;
+    align-items: center;
 }
 
 .en {
@@ -111,7 +111,7 @@ body {
 
 .check {
     position: relative;
-    width: 50px;
+    width: 65px;
 }
 
 .check:before {
